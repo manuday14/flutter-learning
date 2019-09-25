@@ -1,0 +1,24 @@
+class constcon{
+
+  final int a;
+
+  const constcon(this.a);
+
+}
+
+main(){
+
+  var a = const constcon(1);
+
+  var b= const constcon(1);
+
+  print("The value of with const constructor is ${a==b}");
+
+   /********And if you check without const **************/
+
+   var c = new constcon(1);
+
+   var d = new constcon(2);
+
+   print("The value of WithOut const constructor is ${c==d}");
+}
